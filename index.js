@@ -15,12 +15,13 @@ let tercerMensaje = readlineSync.question("Escriba su tercer mensaje: ");
 console.log("Su primer mensaje: ", primerMensaje, ". Su segundo mensaje: ", segundoMensaje, ". Su tercer mensaje: ", tercerMensaje, ".");
 
 
-function calcularArea(){
-  let base = parseInt (readlineSync.question("Ingrese la base: "));
-  let altura = parseInt (readlineSync.question("Ingrese la altura: "));
+function calcularArea(base, altura){
   return base * altura;
 };
-let resultado = calcularArea();
+
+let base = parseInt (readlineSync.question("Ingrese la base: "));
+let altura = parseInt (readlineSync.question("Ingrese la altura: "));
+let resultado = calcularArea(base, altura);
 console.log("El area del cuadrado es: ", resultado);
 
 
